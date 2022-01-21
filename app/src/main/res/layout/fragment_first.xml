@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View"/>
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/noteContainer"
+        android:layout_width="297dp"
+        android:layout_height="303dp"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toTopOf="@+id/button_Valid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Title"
+            app:layout_constraintBottom_toBottomOf="@+id/editTitle"
+            app:layout_constraintEnd_toStartOf="@+id/editTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTitle"
+            app:layout_constraintVertical_bias="0.38" />
+
+        <TextView
+            android:id="@+id/text_Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Content"
+            app:layout_constraintBottom_toBottomOf="@+id/editContent"
+            app:layout_constraintEnd_toStartOf="@+id/editContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editContent"
+            app:layout_constraintVertical_bias="0.428" />
+
+
+        <TextView
+            android:id="@+id/text_Priority"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Priority"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerPriority"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerPriority"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinnerPriority"
+            app:layout_constraintVertical_bias="0.482" />
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="196dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editContent"
+            android:layout_width="196dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTitle"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/spinnerPriority"
+            android:layout_width="196dp"
+            android:layout_height="48dp"
+
+            android:entries="@array/priority"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editContent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_Valid"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

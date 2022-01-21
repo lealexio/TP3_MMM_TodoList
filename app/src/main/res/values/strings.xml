@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tp3MMMTodoList</string>
+
+    <string name="first_fragment_label">Add Note</string>
+    <string name="second_fragment_label">View Notes</string>
+
+    <string name="Title">Title</string>
+    <string name="Content">Content</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Priority">Priority</string>
+
+    <string name="resetUserData">Reset Inputs</string>
+
+    <string name="createNote">New Note</string>
+</resources>
